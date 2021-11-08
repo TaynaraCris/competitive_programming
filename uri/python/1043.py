@@ -10,16 +10,13 @@ possivel = 0
 perimetro = 0
 area = 0
 
-if b > c 
-    < a < b + c:
+if abs(b - c) < a < b + c:
     perimetro = a + b + c
     print('Perimetro = {:.1f}'.format(perimetro))
-elif a > c:
-    possivel = ( a - c ) < b < a + c
+elif abs(a - c) < b < a + c:
     perimetro = a + b + c
     print('Perimetro = {:.1f}'.format(perimetro))
-elif a > b:
-    possivel = ( a - b ) < c < a + b
+elif abs(a - b) < c < a + b:
     perimetro = a + b + c
     print('Perimetro = {:.1f}'.format(perimetro))
 else:
